@@ -47,7 +47,6 @@ var retrieveAllListings = function() {
   /* 
     Retrieve all listings in the database, and log them to the console. 
    */
-    console.log("TEST 4");
     mongoose.connect(config.db.uri, { useNewUrlParser: true, useUnifiedTopology: true });
         Listing.find({}, function (err, location) {
             if (err) throw err;
